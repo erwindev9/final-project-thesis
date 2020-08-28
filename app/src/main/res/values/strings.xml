@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WisataReligi</string>
+    <string name="about">Temukan dan jelajahi tempat wisata religi yang direkomendasikan untuk Mu </string>
+    <string name="about1">Tentang Wisata Religi</string>
+    <string name="title_activity_display_maps">Map</string>
+
+    <string name="content">Gereja Katolik Gembala Yang Baik Lubuk Pakam adalah gereja yang berlokasi di kecamatan Lubuk Pakam</string>
+    <string name="info"> </string>
+    <string name="title_activity_home_map">Map</string>
+
+</resources>

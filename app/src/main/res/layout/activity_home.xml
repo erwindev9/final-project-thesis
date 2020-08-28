@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c4c4c4"
+    tools:context=".ui.home.HomeActivity">
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/srl_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:elevation="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_rekomendasi"
+                        android:background="@drawable/button_sign_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Lihat Rekomendasi Wisata"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+
+                            android:layout_height="wrap_content">
+
+                            <com.synnapps.carouselview.CarouselView
+                                android:id="@+id/carouselView"
+                                android:layout_width="match_parent"
+                                android:scrollbars="vertical"
+                                android:layout_margin="10dp"
+                                android:layout_height="200dp"/>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerview_home"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+
+                    </androidx.core.widget.NestedScrollView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bottom_bar_shape"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:id="@+id/homeBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@color/colorWhite"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_home_black_"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <ImageButton
+                        android:id="@+id/mapBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@color/colorWhite"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_map_pin"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <ImageButton
+                        android:id="@+id/crvUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@color/colorWhite"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_person"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <ImageButton
+                        android:id="@+id/moreBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@color/colorWhite"
+                        android:padding="15dp"
+                        app:srcCompat="@drawable/ic_more"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

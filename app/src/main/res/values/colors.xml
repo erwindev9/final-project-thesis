@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EEEEEE</color>
+    <color name="colorPrimaryDark">#C4C4C4</color>
+    <color name="colorAccent">#C3DFF9</color>
+
+    <color name="colorBackground">#EEEEEE</color>
+    <color name="colorForm">#C4C4C4</color>
+    <color name="colorButtonLogin">#C3DFF9</color>
+    <color name="colorButtonSignUp">#746666</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorPrimary1">#008577</color>
+    <color name="colorPrimaryDark1">#3700B3</color>
+    <color name="colorAccent1">#d81b60</color>
+
+    <color name="colorDarkSemiTransparent">#60000000</color>
+
+    <color name="blackColor">#000</color>
+
+    <color name="colorTextTitle">#262626</color>
+
+</resources>

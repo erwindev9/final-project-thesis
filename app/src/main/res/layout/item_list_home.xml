@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:transitionName="img"
+                android:scaleType="centerCrop"
+                tools:ignore="UnusedAttribute"/>
+
+            <ImageView
+                android:src="@drawable/bottom_shadow"
+                android:layout_alignBottom="@id/item_image"
+                android:id="@+id/shadow_top"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                />
+
+            <FrameLayout
+                android:id="@+id/layoutDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_image"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="-30dp">
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextTitle"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Title"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/item_image"
+                android:id="@+id/title_text"/>
+
+            <TextView
+                android:id="@+id/txt_year"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/title_text"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:text="Desc"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

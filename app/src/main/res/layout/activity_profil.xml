@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.user.update.UserUpdateActivity">
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image_view"
+                        android:layout_width="250px"
+                        android:layout_height="250px"
+                        android:src="@drawable/ic_user_512px"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"/>
+
+                    <ImageView
+                        android:id="@+id/img_open"
+                        android:layout_marginTop="60dp"
+                        android:layout_gravity="end"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/photo_camera"/>
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_namaLengkap"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_user"
+                android:drawableEnd="@drawable/edit_20px"
+                android:hint="Nama Lengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_background"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_user"
+                android:drawableEnd="@drawable/edit_20px"
+                android:hint="Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_background"
+                android:padding="10dp"/>
+
+
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/mail"
+                android:drawableEnd="@drawable/edit_20px"
+                android:hint="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_background"
+                android:padding="10dp"/>
+
+
+            <EditText
+                android:id="@+id/edt_pickDate"
+                android:layout_marginTop="20dp"
+                android:focusable="false"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/time_20px"
+                android:drawableEnd="@drawable/edit_20px"
+                android:hint="Tanggal Lahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_background"
+                android:padding="10dp"/>
+
+
+            <EditText
+                android:id="@+id/edt_alamat"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/pin_20px"
+                android:drawableEnd="@drawable/edit_20px"
+                android:hint="Alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_background"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_agama"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_favorite_black"
+                android:drawableEnd="@drawable/edit_20px"
+                android:hint="Agama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_background"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/edt_jenis_kelamin"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_faceb_black"
+                android:drawableEnd="@drawable/edit_20px"
+                android:hint="Jenis Kelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_background"
+                android:padding="10dp"/>
+
+
+
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_password"
+                android:drawableEnd="@drawable/edit_20px"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edit_background"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_sign_in"
+                android:text="Simpan Perubahan"
+                android:textAllCaps="false"
+                android:textSize="21sp" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_register_background"
+                android:text="Keluar"
+                android:textAllCaps="false"
+                android:textSize="21sp"/>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>-->
+
+</RelativeLayout>

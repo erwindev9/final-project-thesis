@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.user.update.activity.EditProfilActivity">
+
+    <ScrollView
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_namaLengkap"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawableEnd="@drawable/edit_20px"
+                    android:hint="Nama Lengkap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edit_background"
+                    android:padding="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawableEnd="@drawable/edit_20px"
+                    android:hint="Username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edit_background"
+                    android:padding="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/mail"
+                    android:drawableEnd="@drawable/edit_20px"
+                    android:hint="Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edit_background"
+                    android:padding="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_pickDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_edit_background"
+                    android:drawableStart="@drawable/time_20px"
+                    android:drawableEnd="@drawable/edit_20px"
+                    android:drawablePadding="10dp"
+                    android:hint="Tanggal Lahir"
+                    android:padding="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_alamat"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/pin_20px"
+                    android:drawableEnd="@drawable/edit_20px"
+                    android:hint="Alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edit_background"
+                    android:padding="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_agama"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_favorite_black"
+                    android:drawableEnd="@drawable/edit_20px"
+                    android:hint="Agama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edit_background"
+                    android:padding="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_jenis_kelamin"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_faceb_black"
+                    android:drawableEnd="@drawable/edit_20px"
+                    android:hint="Jenis Kelamin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edit_background"
+                    android:padding="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawableEnd="@drawable/edit_20px"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edit_background"
+                    android:padding="10dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_sign_in"
+                android:text="Simpan Perubahan"
+                android:textAllCaps="false"
+                android:textSize="21sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

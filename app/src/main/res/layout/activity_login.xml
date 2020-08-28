@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.login.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edtUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_edit_background"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="10dp"
+                    android:hint="Username"
+                    android:padding="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_edit_background"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_sign_in"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textSize="21sp" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_register_background"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textSize="21sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
